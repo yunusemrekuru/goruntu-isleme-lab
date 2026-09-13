@@ -1,5 +1,15 @@
-*.weights filter=lfs diff=lfs merge=lfs -text
-*.caffemodel filter=lfs diff=lfs merge=lfs -text
-*.t7 filter=lfs diff=lfs merge=lfs -text
-*.pb filter=lfs diff=lfs merge=lfs -text
-*.dat filter=lfs diff=lfs merge=lfs -text
+# GitHub dil istatistiğinde .ipynb dosyalarını Python olarak göster
+*.ipynb linguist-language=Python
+
+# Büyük model/dosya dosyalarını dil istatistiğinden çıkar
+*.weights linguist-vendored
+*.caffemodel linguist-vendored
+*.t7 linguist-vendored
+*.pb linguist-vendored
+*.dat linguist-vendored
+*.avi linguist-vendored
+*.mp4 linguist-vendored
+*.flv linguist-vendored
+*.npy linguist-vendored
+*.xml linguist-vendored
+*.pbtxt linguist-vendored
