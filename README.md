@@ -149,6 +149,16 @@ Büyük önceden eğitilmiş modeller **Git LFS** ile saklanır:
 
 > LFS dosyalarını indirmek için `git lfs install` ve `git lfs pull` yeterlidir.
 
+### 🧹 Depo Boyutu ve Temizlik
+
+Repoyu hafif tutmak için şunlar yapıldı:
+
+- **Notebook çıktıları temizlendi:** Tüm `.ipynb` dosyalarındaki hücre çıktıları (gömülü görüntü/video base64 verileri) ve markdown ekleri kaldırıldı. Bu sayede notebook'lar ~355 MB'tan ~0.5 MB'a indi.
+- **Üretilmiş çıktı dosyaları silindi:** Notebook'ları çalıştırınca otomatik oluşan `*_output.avi/mp4`, `car_tracking_*`, `NST_Starry_Night.*`, `tilt_shift_output*` gibi video/görsel çıktılar depodan çıkarıldı.
+- **Kullanılmayan dosyalar silindi:** Hiçbir ders tarafından referans verilmeyen örnek görsel ve video dosyaları kaldırıldı.
+
+Bu çıktılar kaybolmaz — ilgili notebook'u çalıştırdığınızda aynı dosyalar yeniden üretilir.
+
 ---
 
 ## 🇬🇧 English
@@ -191,6 +201,16 @@ jupyter notebook
 ### 📦 Model Files (Git LFS)
 
 Large pretrained models are stored via **Git LFS** (see the list above). Run `git lfs pull` to download them.
+
+### 🧹 Repo Size & Cleanup
+
+To keep the repository lightweight:
+
+- **Notebook outputs stripped:** All cell outputs (embedded base64 images/videos) and markdown attachments were removed from every `.ipynb`, reducing notebooks from ~355 MB to ~0.5 MB.
+- **Generated artifacts removed:** Output files produced when running the notebooks (e.g. `*_output.avi/mp4`, `car_tracking_*`, `NST_Starry_Night.*`, `tilt_shift_output*`) were deleted from the repo.
+- **Unused files removed:** Sample images/videos not referenced by any lesson were deleted.
+
+These outputs are not lost — they are regenerated when you run the corresponding notebook.
 
 ---
 
