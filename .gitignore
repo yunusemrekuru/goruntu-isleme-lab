@@ -1,0 +1,38 @@
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.ipython/
+.jupyter/
+
+# IPython / Jupyter
+profile_default/
+ipython_config.py
+
+# Junk files
+OpenCV/#
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Model files are tracked with Git LFS (see .gitattributes)
